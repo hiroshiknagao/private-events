@@ -1,0 +1,11 @@
+<h1>The Odin's events</h1>
+<ul>
+  <% @events.each do |event| %>
+    <li><%= event.title %></li>
+    <li><%= event.description %></li>
+    <li><%= event.location %></li>
+    <li><%= event.date %></li>
+    <li><%= event.start_time%></li>
+    <li><%= event.finish_time%></li>
+  <% end %>
+</ul>
