@@ -4,3 +4,9 @@
   <li>created_event</li>
 <% end %>
 </ul>
+<h1>Your Attended Events</h1>
+  <% @attending_events.each do |event| %>
+    <% if event.date < Date.today %>
+      <%= render event %>
+    <% end %>
+  <% end %>
